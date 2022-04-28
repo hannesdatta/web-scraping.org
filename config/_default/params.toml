@@ -10,7 +10,7 @@ description = "Manage the challenges in scraping data for academic research."
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["webdata.png"]
 ogLocale = "en_US"
 domainTLD = "web-scraping.org"
 titleHome = "Scraping Web Data for Marketing Insights"
@@ -31,7 +31,7 @@ schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "webdata.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/hannesdatta"
