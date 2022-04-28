@@ -55,10 +55,10 @@ smallLimit = "300"
 
 # Footer
 #footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
-footer = "Copyright (c) 2022 Johannes Boegershausen and Hannes Datta. <a class=\"text-muted\" href=\"/privacy-policy\">Privacy Policy</a>."
+footer = "Copyright (c) 2022. <a class=\"text-muted\" href=\"/contact\">Contact</a>. <a class=\"text-muted\" href=\"/privacy-policy\">Privacy Policy</a>."
 #footer = "Copyright (c) 2022 Johannes Boegershausen and Hannes Datta"
 # Feed
-copyRight = "Copyright (c) 2022 Johannes Boegershausen and Hannes Datta"
+copyRight = "Copyright (c) 2022 by the authors."
 
 # Alert
 alert = false

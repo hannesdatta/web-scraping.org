@@ -107,6 +107,12 @@
   url = "/docs/tutorials/apis"
   parent = "tutorials"
 
+[[main]]
+  name = "Other Resources"
+  weight = 105
+  identifier = "resources"
+  url = "/docs/other-resources/"
+
 
 [[main]]
   name = "Community"
@@ -129,10 +135,10 @@
   parent = "community"
 
 
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 130
+#[[main]]
+  #name = "Blog"
+  #url = "/blog/"
+  #weight = 130
 
   [[main]]
     name = "Contact"
