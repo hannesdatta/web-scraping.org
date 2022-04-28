@@ -1,0 +1,118 @@
+{{ define "main" }}
+{{ $hugotagsfilter := resources.Get "js/hugotagsfilter-1.2.2.js" -}}
+
+{{ $pages := where .Site.RegularPages "Type" "in" "paper" }}
+
+{{ $sections := .Site.Params.mainSections }}
+
+<!--script src="{{ "vendor/htf/hugotagsfilter-...js" | relURL}}"></script>
+-->
+
+
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ end }}
+
+
+
+
+
+<div><h2><span id="selectedItemCount"></span> Items</h2></div>
+<div class="tf-items-container">
+{{ range $pages.ByPublishDate.Reverse }}
+  <div  class="tf-filter-item tf-item"
+        data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}"
+        data-section="{{ .Section }}"
+
+        data-authors="{{ with .Params.author }}{{ if eq ( printf "%T" . ) "string" }}{{ . | replaceRE "[.]" "_" | urlize }}{{ else if eq ( printf "%T" . ) "[]string" }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{end}}{{end}}{{else}}no-author{{end}}"
+
+        >
+    <h6>{{.Section}}</h6>
+    <h5>{{ with .Params.author }}{{ if eq ( printf "%T" . ) "string" }}{{.|humanize|title}}{{ else if eq ( printf "%T" . ) "[]string" }}{{ range . }}{{.|humanize|title}} {{end}}{{end}}{{else}}No Author{{end}}</h5>
+
+    <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+
+    <div>{{ with .Params.tags }}{{ range . }}<tag>{{ . | humanize | title }}</tag> {{ end }}{{ else }}<tag>untagged</tag>{{ end }}</div>
+
+  </div>
+{{ end }}
+</div>
+
+
+
+
+
+<h4>Sections</h4>
+<button id="selectAllSections" onclick="htf.showAll('section')">
+  All Sections
+</button>
+{{ range $sections }}
+  <button class="sect-button" id="sect-{{ . | urlize }}" onclick="htf.checkFilter('{{ . | urlize }}', 'sect-')">
+    {{ . | title }} <span id="ssect-{{ . | urlize }}"> -count-</span> | <span id="csect-{{ . | urlize }}"> -count-</span>
+  </button>
+{{ end }}
+
+
+
+<script src="{{ $hugotagsfilter.RelPermalink }}" defer></script>
+
+<script>
+var htfConfig = {
+  filters: [
+    {
+      name: 'tags',
+      prefix: 'tag-',
+      buttonClass: 'tag-button',
+      allSelector: '#selectAllTags',
+      attrName: 'data-tags',
+      selectedPrefix: 'stags-',
+      countPrefix: 'ctags-'
+    },
+    {
+      name: 'section',
+      prefix: 'sect-',
+      buttonClass: 'sect-button',
+      allSelector: '#selectAllSections',
+      attrName: 'data-section',
+      selectedPrefix: 'ssect-',
+      countPrefix: 'csect-'
+
+    },
+    {
+      name: 'authors',
+      prefix: 'auth-',
+      buttonClass: 'auth-button',
+      allSelector: '#selectAllAuthors',
+      attrName: 'data-authors',
+      selectedPrefix: 'sauth-',
+      countPrefix: 'cauth-'
+
+    }
+  ],
+  showItemClass: "show-item",
+  filterItemClass: "tf-filter-item",
+  activeButtonClass: "active",
+  counterSelector: "selectedItemCount",
+  populateCount: true,
+  setDisabledButtonClass: "disable-button"
+}
+var htf = new HugoTagsFilter(htfConfig);
+</script>
+
+<script>
+function toggleAcc(el) {
+  el.classList.toggle("active")
+  var panel = el.nextElementSibling;
+  if (panel.style.maxHeight){
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+}
+</script>
