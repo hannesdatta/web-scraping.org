@@ -1,4 +1,4 @@
-baseurl = "https://webdata-marketing.netlify.app/"
+baseurl = "https://web-scraping.org"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

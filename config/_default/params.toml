@@ -1,7 +1,7 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Web Data"
+title = "Scraping Web Data for Marketing Insights"
 titleSeparator = "-"
 titleAddition = "Web companion"
 description = "Manage the challenges in scraping data for academic research."
@@ -12,7 +12,7 @@ description = "Manage the challenges in scraping data for academic research."
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "webdata-marketing.netlify.app"
+domainTLD = "web-scraping.org"
 titleHome = "Scraping Web Data for Marketing Insights"
 
 ## Twitter Cards
