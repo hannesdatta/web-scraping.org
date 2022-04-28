@@ -12,3 +12,6 @@ menu:
 weight: 240
 toc: true
 ---
+
+- [Programmable Web](https://programmableweb.com)
+- [GitHub](https://github.com/public-apis/public-apis)

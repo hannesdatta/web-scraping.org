@@ -124,14 +124,14 @@
   name = "Join email list"
   weight = 110
   identifier = "email-subscribe"
-  url = "/docs/prologue/quick-start/"
+  url = "/join/"
   parent = "community"
 
 [[main]]
   name = "Discussions"
   weight = 120
   identifier = "discussions"
-  url = "https://getdoks.org/tutorial/introduction/"
+  url = "https://github.com/hannesdatta/webdata-website/discussions"
   parent = "community"
 
 
