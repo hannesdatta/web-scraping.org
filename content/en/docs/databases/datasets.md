@@ -18,8 +18,7 @@ toc: true
 - [Yahoo! Movies](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r&guccounter=1)
 - [Recommender Systems Datasets hosted by Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/datasets.html)
 - [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/index.html)
-- [https://osf.io/6n2kt/]()
-- Collection of various [online review datasets](https://ndownloader.figstatic.com/files/24120493) as featured in Schoenmueller, Netzer, and Stahl (2020)
+- Collection of various [online review datasets]as featured in Schoenmueller, Netzer, and Stahl (2020): (https://ndownloader.figstatic.com/files/24120493) + (https://osf.io/6n2kt/)
 - Kickstarter datasets from [Webrobots](https://webrobots.io/kickstarter-datasets/) and [Kaggle](https://www.kaggle.com/kemical/kickstarter-projects)
 - [Indiegogo datasets](https://webrobots.io/indiegogo-dataset/)
 - Crowdfunding platform dedicated to realizing creative projects and products.
