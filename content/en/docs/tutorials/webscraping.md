@@ -1,7 +1,7 @@
 ---
-title: "Web scraping"
-description: "Doks comes with commands for common tasks."
-lead: "Doks comes with commands for common tasks."
+title: "Learn how to use Web scraping"
+description: "An overview about tutorials to learn web scraping."
+#lead: "Doks comes with commands for common tasks."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -9,104 +9,16 @@ images: []
 menu:
   docs:
     parent: "tutorials"
-weight: 130
+weight: 150
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+- Introduction to collecting data from static sites using `rvest` in R. [The companion offers videos, exercises, and code](https://practicewebscrapingsite.wordpress.com)
 
-## create
+- An accessible introduction to basic web scraping with a [practice website](https://scrapethissite.com)
 
-Create new content for your site:
+- Great practice site, [mimicking an ecommerce store](https://books.toscrape.com)
 
-```bash
-npm run create [path] [flags]
-```
+- Tutorial focusing on the [Python package `scrapy`](https://rlanders.net/scrapy)
 
-See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
-
-### Docs based tree
-
-Create a docs based tree — with a single command:
-
-```bash
-npm run create -- --kind docs [section]
-```
-
-For example, create a docs based tree named guides:
-
-```bash
-npm run create -- --kind docs guides
-```
-
-## lint
-
-Check scripts, styles, and markdown for errors:
-
-```bash
-npm run lint
-```
-
-### scripts
-
-Check scripts for errors:
-
-```bash
-npm run lint:scripts [-- --fix]
-```
-
-### styles
-
-Check styles for errors:
-
-```bash
-npm run lint:styles [-- --fix]
-```
-
-### markdown
-
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
-
-```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
-```
+- 7-week course to learn how to scrape with all teaching material being openly available ([Online Data Collection and Management, Tilburg University](https://odcm.hannesdatta.com))
