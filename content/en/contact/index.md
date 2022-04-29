@@ -16,8 +16,11 @@ Get in touch with us to join the web data community.
 [feedback@web-scraping.org](mailto:feedback@web-scraping.org)
 
 [Johannes Boegershausen](https://sites.google.com/site/johannesboegershausen/)
+
 [Hannes Datta](https://hannesdatta.com)
+
 [Abhishek Borah](https://www.insead.edu/faculty-research/faculty/abhishek-borah)
+
 [Andrew T. Stephen](https://www.sbs.ox.ac.uk/about-us/people/andrew-stephen)
 
 #### Get in touch!
