@@ -62,6 +62,9 @@
 
 {{ $js := $slice | resources.Concat "main.js" -}}
 
+{{ $datasetFilter := resources.Get "js/dataset.js" }}
+<script src="{{ $datasetFilter.RelPermalink }}" defer></script>
+
 {{ if eq (hugo.Environment) "development" -}}
   {{ if .Site.Params.options.bootStrapJs -}}
     <script src="{{ $bs.RelPermalink }}" defer></script>
