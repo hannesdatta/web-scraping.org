@@ -78,11 +78,12 @@ function init(source) {
     .then((data) => {
       dataset = data;
       render();
-    }).finally(() => {
+    })
+    .finally(() => {
       totalResultsString.classList.remove("d-none");
       dataResultsShimmer.classList.add("d-none");
       datasetResultsHolder.classList.remove("d-none");
-    })
+    });
 }
 
 function ShowShimmer() {
