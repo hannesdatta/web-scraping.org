@@ -13,7 +13,7 @@ weight: 150
 toc: true
 ---
 
-- Introduction to collecting data from static sites using `rvest` in R. [The companion offers videos, exercises, and code](https://practicewebscrapingsite.wordpress.com)
+- Introduction to collecting data from static sites using `rvest` in R. [The companion website offers videos, exercises, and code](https://practicewebscrapingsite.wordpress.com)
 
 - An accessible introduction to basic web scraping with a [practice website](https://scrapethissite.com)
 
