@@ -1,0 +1,30 @@
+{{ $dataset := .Get "dataset" }}
+
+<section data-source="{{ $.Page.Params.dataset.source }}" id="dataset">
+  {{ range $key, $value := $.Page.Params.dataset.filters }}
+  <div class="d-flex align-items-center mb-2">
+    <div class="mr-2">{{ $key | humanize }}:</div>
+    &nbsp;&nbsp;
+    <div class="d-flex">
+      {{ range $value }}
+      <button class="btn card btn-sm mr-2 filterBtn" data-type="{{ $key }}" data-value="{{ . }}">{{ . }}</button>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- results holder -->
+  <div class="datasetResultsHolder">
+    <h4 class="totalResultsString">0 Results</h4>
+
+    <div class="datasetResults"></div>
+  </div>
+
+  <br />
+  <!-- pagination -->
+  <div class="mt-5 d-flex align-items-center justify-content-center">
+    <button id="prevBtn" class="btn card d-none mr-2">« Previous</button>
+    <div class="mr-2"></div>
+    <button id="nextBtn" class="btn card d-none">Next »</button>
+  </div>
+</section>

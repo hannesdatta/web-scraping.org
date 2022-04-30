@@ -1,0 +1,30 @@
+.datasetResults {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+
+  .datasetResult {
+    background-color: $gray-100;
+    padding: 12px;
+    border-radius: $border-radius;
+    border: solid 1px transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: solid 1px $gray-300;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .datasetResults {
+    grid-template-columns: 1fr;
+  }
+}
+
+// two screen sizes media query
+@media (min-width: 768px) and (max-width: 1200px) {
+  .datasetResults {
+    grid-template-columns: 1fr 1fr;
+  }
+}

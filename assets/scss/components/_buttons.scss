@@ -53,6 +53,11 @@ body .toggle-light {
   display: none;
 }
 
+.btn-toggle-active {
+  background-color: $gray-200 !important;
+  border-color: $gray-300;
+}
+
 pre {
   position: relative;
 }

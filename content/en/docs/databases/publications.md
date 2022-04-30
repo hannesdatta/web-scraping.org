@@ -11,8 +11,13 @@ menu:
     parent: "databases"
 weight: 210
 toc: true
+
+dataset:
+  filters:
+    journal: ["JCR", "JM", "JMR"]
+    type: ["Web scraping", "API"]
+    year: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008]
+  source: "bib.json"
 ---
 
-{{< alert "Work in progress" >}}
-We are working hard to get the database with 300+ marketing papers using web data up and running. Please [subscribe to our email newsletter](/join) to learn when the database is available.
-{{< /alert >}}
+{{< filter >}}
