@@ -95,7 +95,7 @@ function ShowShimmer() {
     totalResultsString.classList.remove("d-none");
     dataResultsShimmer.classList.add("d-none");
     datasetResultsHolder.classList.remove("d-none");
-  }, 1500);
+  }, 300);
 }
 
 function render() {
@@ -145,11 +145,12 @@ function createDatasetResults(results) {
     resultDOM.innerHTML = `
       <a href="https://dx.doi.org/${result.doi}" target="_blank">
         <div class="datasetResultTitle">
-          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-bottom: 4px;">${result.type} . ${result.year}</small>
+          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-bottom: 4px;">${result.authors} (${result.year})</small>
           <h6 style="margin: 0; font-weight: 500;">${result.title}</h6>
         </div>
         <div class="datasetResultDescription">
-          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-top: 8px;">Authors: ${result.authors}</small>
+          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-top: 8px;">Published in ${result.journal}</small>
+          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-top: 0px;">Data collection: ${result.type}</small>
         </div>
       </a>
     `;
