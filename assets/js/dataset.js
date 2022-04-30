@@ -8,6 +8,7 @@ const perpage = 12;
 const datasetDOM = document.querySelector("#dataset");
 const totalResultsString = document.querySelector(".totalResultsString");
 const filterBtn = document.querySelectorAll(".filterBtn");
+const dataResultsShimmer = document.querySelector(".datasetResultsShimmers");
 
 // pagination
 const nextButton = document.querySelector("#nextBtn");
@@ -77,10 +78,28 @@ function init(source) {
     .then((data) => {
       dataset = data;
       render();
-    });
+    }).finally(() => {
+      totalResultsString.classList.remove("d-none");
+      dataResultsShimmer.classList.add("d-none");
+      datasetResultsHolder.classList.remove("d-none");
+    })
+}
+
+function ShowShimmer() {
+  totalResultsString.classList.add("d-none");
+  dataResultsShimmer.classList.remove("d-none");
+  datasetResultsHolder.classList.add("d-none");
+
+  setTimeout(() => {
+    totalResultsString.classList.remove("d-none");
+    dataResultsShimmer.classList.add("d-none");
+    datasetResultsHolder.classList.remove("d-none");
+  }, 1500);
 }
 
 function render() {
+  ShowShimmer();
+
   if (Object.keys(filters).length === 0) {
     filteredResults = dataset;
   }

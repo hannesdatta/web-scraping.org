@@ -2,12 +2,12 @@
 
 <section data-source="{{ $.Page.Params.dataset.source }}" id="dataset">
   {{ range $key, $value := $.Page.Params.dataset.filters }}
-  <div class="d-flex align-items-center mb-2">
+  <div class="d-flex">
     <div class="mr-2">{{ $key | humanize }}:</div>
     &nbsp;&nbsp;
-    <div class="d-flex">
+    <div class="d-flex flex-wrap">
       {{ range $value }}
-      <button class="btn card btn-sm mr-2 filterBtn" data-type="{{ $key }}" data-value="{{ . }}">{{ . }}</button>
+      <button class="btn card btn-sm mr-2 filterBtn mb-2" data-type="{{ $key }}" data-value="{{ . }}">{{ . }}</button>
       {{ end }}
     </div>
   </div>
@@ -15,9 +15,19 @@
 
   <!-- results holder -->
   <div class="datasetResultsHolder">
-    <h4 class="totalResultsString">0 Results</h4>
+    <h4 class="totalResultsString d-none">0 Results</h4>
 
-    <div class="datasetResults"></div>
+    <div class="datasetResults d-none"></div>
+    <br />
+    <div class="datasetResultsShimmers">
+      {{ range $num := (seq 6) }}
+        <div class="shimmer">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      {{ end }}
+    </div>
   </div>
 
   <br />
