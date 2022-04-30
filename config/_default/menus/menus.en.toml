@@ -50,13 +50,13 @@
   weight = 20
   parent = "databases"
 
-  [[main]]
-    name = "Working papers"
-    identifier = "workingpapers"
-    url = "/docs/databases/workingpapers/"
+#  [[main]]
+#    name = "Working papers"
+#    identifier = "workingpapers"
+#    url = "/docs/databases/workingpapers/"
   # url = "/docs/1.0/prologue/introduction/"
-    weight = 30
-    parent = "databases"
+#    weight = 30
+#    parent = "databases"
 
   [[main]]
     name = "Web data sets"
