@@ -143,13 +143,15 @@ function createDatasetResults(results) {
     const resultDOM = document.createElement("div");
     resultDOM.classList.add("datasetResult");
     resultDOM.innerHTML = `
-      <div class="datasetResultTitle">
-        <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-bottom: 4px;">${result.type} . ${result.year}</small>
-        <h6 style="margin: 0; font-weight: 500;">${result.title}</h6>
-      </div>
-      <div class="datasetResultDescription">
-        <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-top: 8px;">Authors: ${result.authors}</small>
-      </div>
+      <a href="https://dx.doi.org/${result.doi}" target="_blank">
+        <div class="datasetResultTitle">
+          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-bottom: 4px;">${result.type} . ${result.year}</small>
+          <h6 style="margin: 0; font-weight: 500;">${result.title}</h6>
+        </div>
+        <div class="datasetResultDescription">
+          <small class="mb-2 text-muted d-block" style="font-size: 14px; margin-top: 8px;">Authors: ${result.authors}</small>
+        </div>
+      </a>
     `;
 
     datasetResultsHolder.appendChild(resultDOM);
