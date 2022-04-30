@@ -7,19 +7,19 @@ draft: false
 images: []
 ---
 
-This website hosts the digital companion to the article "Fields of Gold: Scraping Web Data for Marketing Insights", forthcoming at *Journal of Marketing*.
+This website hosts the digital companion to the article "Fields of Gold: Scraping Web Data for Marketing Insights", forthcoming at the *Journal of Marketing*.
 
-We've compiled this material to the best of our ability.
+We have compiled this material to the best of our ability.
 
 Get in touch with us to join the web data community.
 
 [feedback@web-scraping.org](mailto:feedback@web-scraping.org)
 
-[Johannes Boegershausen](https://sites.google.com/site/johannesboegershausen/)
+[Johannes Boegershausen](https://boegershausen.net/)
 
 [Hannes Datta](https://hannesdatta.com)
 
-[Abhishek Borah](https://www.insead.edu/faculty-research/faculty/abhishek-borah)
+[Abhishek Borah](https://sites.google.com/view/abhishekborah/home)
 
 [Andrew T. Stephen](https://www.sbs.ox.ac.uk/about-us/people/andrew-stephen)
 
