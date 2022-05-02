@@ -2,7 +2,7 @@
 
 Web companion for "Fields of Gold: Scraping Web Data for Marketing Insights", forthcoming at the *Journal of Marketing*.
 
-__[Visit the website at https://web-scraping.org]().__
+__[Visit the website at https://web-scraping.org](https://web-scraping.org).__
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e13c5e77-4d3b-47de-899f-823206cb8709/deploy-status)](https://app.netlify.com/sites/webdata-marketing/deploys)
 
