@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Web Data"
+title = "web-scraping.org"
 titleSeparator = "-"
-titleAddition = "Web companion"
+titleAddition = "Web scraping and APIs for academic research."
 description = "Manage the challenges in scraping data for academic research."
 
 ## Documentation
