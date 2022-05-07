@@ -13,7 +13,7 @@ weight: 230
 toc: true
 ---
 
-One this page, we curate web datasets that can be used for academic research.
+On this page, we provide a curation of web datasets that can be used for academic research.
 
 - [Yelp Academic datasets](https://www.yelp.ca/dataset), covering millions of reviews, thousands of businesses, and ten thousands of pictures
 - [IMDb Datasets](https://www.imdb.com/interfaces/)
