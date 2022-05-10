@@ -14,5 +14,3 @@ toc: true
 ---
 
 Want to teach students about web scraping and APIs? Then [download this slide deck](../boegershausen_et_al_fields_of_gold.pptx).
-
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=[https://web-scraping.org/docs/other-resources/boegershausen_et_al_fields_of_gold.pptx]' width='100%' height='600px' frameborder='0'>
