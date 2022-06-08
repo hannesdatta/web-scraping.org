@@ -86,13 +86,6 @@
   identifier = "tutorials"
   url = "/docs/tutorials/"
 
-#[[main]]
-#  name = "Methodological framework"
-#  weight = 70
-#  identifier = "method-framework"
-#  url = "/docs/prologue/quick-start/"
-#  parent = "tutorials"
-
 [[main]]
   name = "Use web scraping"
   weight = 80
@@ -136,9 +129,9 @@
 
 
 #[[main]]
-  #name = "Blog"
-  #url = "/blog/"
-  #weight = 130
+#  name = "Blog"
+#  url = "/blog/"
+#  weight = 130
 
   [[main]]
     name = "Contact"
