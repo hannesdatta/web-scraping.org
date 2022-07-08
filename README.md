@@ -6,6 +6,8 @@ __[Visit the website at https://web-scraping.org](https://web-scraping.org).__
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e13c5e77-4d3b-47de-899f-823206cb8709/deploy-status)](https://app.netlify.com/sites/webdata-marketing/deploys)
 
+The replication package for the paper [is available here on GitHub](https://github.com/hannesdatta/webdata-journal-of-marketing) and on [Zenodo](https://zenodo.org/badge/latestdoi/502820580).
+
 ## Technical Documentation
 
 This website has been programmed using the [Hugo](https://gohugo.io/documentation/) framework, using the [GetDoks](https://getdoks.org) theme. The site is deployed via [Netlify](https://docs.netlify.com/).
