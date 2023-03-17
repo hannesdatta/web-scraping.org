@@ -55,17 +55,18 @@ smallLimit = "300"
 
 # Footer
 #footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
-footer = "Copyright (c) 2022. <a class=\"text-muted\" href=\"/contact\">Contact</a>. <a class=\"text-muted\" href=\"/privacy-policy\">Privacy Policy</a>."
+footer = "Copyright (c) 2022-2023. <a class=\"text-muted\" href=\"/contact\">Contact</a>. <a class=\"text-muted\" href=\"/privacy-policy\">Privacy Policy</a>."
 #footer = "Copyright (c) 2022 Johannes Boegershausen and Hannes Datta"
 # Feed
-copyRight = "Copyright (c) 2022 by the authors."
+copyRight = "Copyright (c) 2023 by the authors."
 
 # Alert
 alert = true
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
 #alertText = "Join the webinar on June 23, 2022 - <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://www.ama.org/events/webinar/jm-webinar-series-insights-for-managers/\">Sign up now!</a>"
-alertText = "Missed our webinar with tips & tricks for researchers? <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://youtu.be/KiyFyLEkqNk\">Watch it now on YouTube!</a>"
+#alertText = "Missed our webinar with tips & tricks for researchers? <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://youtu.be/KiyFyLEkqNk\">Watch it now on YouTube!</a>"
+alertText = "Database now features 350+ papers - Check out our latest podcast <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://open.spotify.com/episode/0nllYyKDcOOaQyjVOAcEae?si=1FFOX44BQ82iHqVtexFW0Q&nd=1\">on Spotify!</a>"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
