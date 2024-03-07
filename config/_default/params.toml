@@ -67,7 +67,10 @@ alertDismissable = true
 #alertText = "Join the webinar on June 23, 2022 - <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://www.ama.org/events/webinar/jm-webinar-series-insights-for-managers/\">Sign up now!</a>"
 #alertText = "Missed our webinar with tips & tricks for researchers? <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://youtu.be/KiyFyLEkqNk\">Watch it now on YouTube!</a>"
 #alertText = "Database now features 400+ papers - Check out our latest podcast <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://open.spotify.com/episode/0nllYyKDcOOaQyjVOAcEae?si=1FFOX44BQ82iHqVtexFW0Q&nd=1\">on Spotify!</a>"
-alertText = "Slides from ACR 2023 Methods Workshop now available for <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://tinyurl.com/8k6unpn\">download!</a>"
+#alertText = "Slides from ACR 2023 Methods Workshop now available for <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://tinyurl.com/8k6unpn\">download!</a>"
+alertText = "Visit <a class=\"alert-link stretched-link\" target=\"_blank\" href=\"https://music-to-scrape.org\">music-to-scrape.org</a> for our digital mock-up store to learn scraping."
+
+http://web-scraping.org/
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
